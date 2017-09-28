@@ -1,0 +1,7 @@
+
+down load the command line from: 
+https://devcenter.heroku.com/articles/heroku-cli
+
+then at the terminal:
+heroku login
+heroku logs --app=stores-rest-api-yu
