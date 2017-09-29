@@ -6,11 +6,11 @@ from flask_jwt import jwt_required
 class UserList(Resource):
 
     parser = reqparse.RequestParser()
-    parser.add_argument('id',
-        type=int,
-        required=True,
-        help="This field cannot be left blank!"
-    )
+    # parser.add_argument('id',
+    #     type=int,
+    #     required=True,
+    #     help="This field cannot be left blank!"
+    # )
     parser.add_argument('username',
         type=str,
         required=True,
