@@ -4,11 +4,11 @@ from flask_restful import Resource, reqparse
 class UserList(Resource):
 
     parser = reqparse.RequestParser()
-    parser.add_argument('id',
-        type=int,
-        required=True,
-        help="This field cannot be left blank!"
-    )
+    # parser.add_argument('id',
+    #     type=int,
+    #     required=True,
+    #     help="This field cannot be left blank!"
+    # )
     parser.add_argument('username',
         type=str,
         required=True,

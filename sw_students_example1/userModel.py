@@ -9,8 +9,7 @@ class UserModel(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80))
 
-    def __init__(self, id, username):
-        self.id = id
+    def __init__(self, username):
         self.username = username
 
     @classmethod
